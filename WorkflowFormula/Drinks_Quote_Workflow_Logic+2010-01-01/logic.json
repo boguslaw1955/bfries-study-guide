@@ -1,0 +1,20 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementName" : "QuantityPerGroup",
+    "elementTimeout" : 0,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementName" : "AddSteps",
+    "elementTimeout" : 0,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "label" : "Drinks Quote Workflow Logic",
+  "status" : "ACTIVE",
+  "uniqueName" : "Drinks_Quote_Workflow_Logic",
+  "validAfter" : "2010-01-01",
+  "workflowType" : "quote"
+}

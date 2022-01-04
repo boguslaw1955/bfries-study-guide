@@ -1,0 +1,120 @@
+{
+  "elements" : [ {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "DateFrom",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "DateTo",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "Salesperson",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "AbortOnSyntaxCheck",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "Lib",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "SalespersonPerformanceData",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "Salesperson Performance",
+    "elementName" : "SalespersonPerformance",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "TotalSales",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 0,
+    "elementGroups" : [ ],
+    "elementName" : "CustomerSalesData",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  }, {
+    "allowOverride" : false,
+    "combinationType" : "FUNCTION",
+    "displayOptions" : 16,
+    "elementGroups" : [ ],
+    "elementLabel" : "Customers Sales",
+    "elementName" : "CustomersSales",
+    "elementTimeout" : 0,
+    "hideOnNull" : false,
+    "hideWarnings" : false,
+    "protectedExpression" : false,
+    "summarize" : false
+  } ],
+  "inputDescriptors" : [ ],
+  "label" : "Drinks Dashboard Logic",
+  "status" : "ACTIVE",
+  "uniqueName" : "Drinks_PriceAnalyzer_Dashboard_Logic",
+  "validAfter" : "2010-01-01"
+}

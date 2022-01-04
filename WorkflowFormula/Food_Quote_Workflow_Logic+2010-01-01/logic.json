@@ -1,0 +1,26 @@
+{
+  "elements" : [ {
+    "combinationType" : "FUNCTION",
+    "elementName" : "AbortOnSyntaxCheck",
+    "elementTimeout" : 0,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementName" : "CollectReasons",
+    "elementTimeout" : 0,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  }, {
+    "combinationType" : "FUNCTION",
+    "elementName" : "BuildApprovalSteps",
+    "elementTimeout" : 0,
+    "hideWarnings" : false,
+    "protectedExpression" : false
+  } ],
+  "label" : "Food Quote Workflow Logic",
+  "status" : "ACTIVE",
+  "uniqueName" : "Food_Quote_Workflow_Logic",
+  "validAfter" : "2010-01-01",
+  "workflowType" : "quote"
+}

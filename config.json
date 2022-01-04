@@ -1,0 +1,8 @@
+{
+  "envs" : {
+    "ce-study-guide" : {
+      "cce-exam-study-guide-0234" : "https://training.pricefx.eu"
+    }
+  },
+  "keepLabelsIntact" : false
+}
