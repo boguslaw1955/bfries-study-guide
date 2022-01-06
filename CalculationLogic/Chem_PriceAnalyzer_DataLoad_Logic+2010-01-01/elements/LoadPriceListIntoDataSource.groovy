@@ -25,5 +25,47 @@
  */
 
 // FIXME START
+def plIterator = api.stream("PL", null)
 
+def chemPLs = plIterator?.findAll { pl ->
+    pl.label.startsWith("Chem_") && pl.approvalState == "APPROVED"
+}?.collectEntries { pl -> [(pl.id): pl]}
+
+plIterator?.close()
+
+if (chemPLs == null) {
+    api.addWarning("Nie można znależć priceList")
+    return
+}
+
+def itemIterator = api.stream("PLI", "sku")
+
+for(def plit in itemIterator)
+{
+    api.trace("test ", plit.allCalculationResults)
+    def chemPL =  chemPLs[plit.pricelistid]
+    if(!chemPL){ continue}
+ //   def region = plit.allCalculationResults.find{ it.resultName == "Region"}.result
+ //
+     def pli = api.find("PLI", null).find()
+
+    api.trace(pli.allCalculationResults.find { it.resultName == "BaseCostCurrency"}.result)
+    String createdBy = api.find("U", 0, 1, null,
+            Filter.equal("id", chemPLs[plit.pricelistId].createdBy)).find().loginName
+
+    def targetRowset = api.getDatamartRowSet("target")
+    def row = [
+            ProductId   : plit.sku,
+            Region   : region,
+            TargetDate  : chemPLs[plit.pricelistId].targetDate,
+            PriceList: chemPLs[plit.pricelistId].label,
+            CreatedBy   : createdBy,
+            ResultPrice   : plit.resultPrice,
+            Currency   : plit.currency,
+    ]
+
+    targetRowset?.addRow(row)
+    api.trace("${row.ProductId} ${row.Region} ${row.TargetDate} ${row.PriceList} ${row.CreatedBy} ${row.ResultPrice} ${row.Currency}")
+    targetRowset?.addRow(row)
+}
 // FIXME END
